@@ -1,15 +1,14 @@
-*{box-sizing: border-box;}
-
 @media (max-width:900px){
   div{width:100%}
-}
-@media (min-width:900px){
-  div{
-    max-width:900px;
-    margin:auto;
-  }
+  footer{display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;)
 }
 
+div{
+  max-width:900px;
+  margin:auto;
+}
 body{
   background-color: #02010a;
   font-family: "Dancing Script";
@@ -31,9 +30,6 @@ header h1{
 text-shadow: 2px 2px 2px #02010a;
 }
 
-header li{
-float:right;
-}
 
 .menulink{
   color:#ffffff;
@@ -50,33 +46,40 @@ float:right;
 article{
   background-color: #82c3a6;
   width:100%;
-  height: auto;
-}
+  }
 
 section{
   background-color: #d5c75f;
+  border-width: 1px;
   width:100%;
-  height:auto;
+  display:flex;
+  flex-direction: row;
 }
 
 section #paisajesprincipal{
-  width:30%;
-
+}
+#paisajesprincipal:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+section #retratosprincipal{
 }
 
-section #retratosprincipal{
-  width:30%;
-  Float:right;
+#retratosprincipal:hover{
+  transform:translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
 }
 
 footer{
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   width:100%;
-}
-
-.container{
   display:flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+footer #contacto{order:1;}
+footer #terminos{order:2;}
+footer #redes{order:3;}
+footer #derechos{order:4;}
