@@ -1,0 +1,18 @@
+@media (max-width:900px){
+  div{width:100%}
+}
+@media (min-width:900px){
+  div{
+    max-width:900px;
+    margin:auto;
+  }
+}
+
+body{
+  background-color: #02010a;
+  font-family: "Dancing Script";
+}
+
+.images{
+  box-shadow: 2px 2px 2px #02010a;
+}
