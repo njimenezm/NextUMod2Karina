@@ -12,42 +12,47 @@ body{
   box-shadow: 2px 2px 2px #02010a;
 }
 
-header{
+#cabecera{
   background-color:#5b7989;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  height:100px;
+  height:125px;
   position:relative;
   top:0px;
   right: 0px;
 }
 
-h1{
+#titulo{
   text-shadow: 2px 2px 2px #02010a;
   color:#ffffff;
   width: 70%;
   height:100%;
   position:absolute;
-  left:1%;
+  top:10%;
+  left:2%;
 }
 
-nav{
-  width: 30%;
+#menu{
+  width: 20%;
   height:100%;
-  margin-left: 55%;
+  font-size:18px;
+  margin-left: 80%;
   position:absolute;
-  top:20%;
-  left:20%;
+  top:35%;
+  right:0%;
 }
 
 .menulink{
   color:#ffffff;
+}
+.menulink:first-child{
   text-decoration:none;
 }
 
 article{
   background-color: #82c3a6;
   width: 100%;
+  height: auto;
   padding-top: 2%;
   padding-bottom: 2%;
   position:relative;
@@ -58,7 +63,7 @@ article{
 #imagencentral{
   display:block;
   margin-left:auto;
-  margin-right: auto;
+  margin-right:auto;
   width: 80%;
 }
 
@@ -77,6 +82,9 @@ figcaption{
 }
 
 #paisaje{
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
   display:flex;
   order:1;
 }
@@ -84,9 +92,13 @@ figcaption{
 #paisaje:hover{
   transform: rotate(10deg);
   box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px solid black;
 }
 
 #retrato{
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
   display:flex;
   order:2;
 }
@@ -94,6 +106,7 @@ figcaption{
 #retrato:hover{
   transform:translate(20px, -5px);
   box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px solid black;
 }
 
 footer{
@@ -111,12 +124,40 @@ footer #redes{order:3;}
 footer #derechos{order:4;}
 
 @media (max-width:900px){
-  div{width:100%}
-  footer{display:flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;}
-  footer #contacto{order:1;}
-  footer #terminos{order:2;}
-  footer #redes{order:3;}
-  footer #derechos{order:4;}
+  #cuerpo{
+    width:100%;
+    display:flex;
+    flex-flow: column wrap;
+  }
+  div #cabecera{order:1;}
+      #titulo{
+        width:100%;
+        text-align: center;
+        position:absolute;
+        top: 0%;
+        left:0%;
+      }
+      #cabecera #menu{
+        width:100%;
+        text-align: center;
+        position:absolute;
+        top:70%;
+      }
+  div article{order:2;}
+  div section{order:3}
+  section{
+    width: 100%;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;}
+  div footer{order:4}
+  footer{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  footer #contacto{order:1;padding-left: 5%;}
+  footer #terminos{order:2;padding-left: 5%;}
+  footer #redes{order:3;padding-left: 5%;}
+  footer #derechos{order:4;padding-left: 5%;}
 }
