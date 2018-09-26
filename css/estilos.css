@@ -34,11 +34,9 @@ h1{
 nav{
   width: 30%;
   height:100%;
-  margin-left: 60%;
+  margin-left: 55%;
   position:absolute;
-  top:40%;
-  bottom:40%;
-  right:0%;
+  top:20%;
   left:20%;
 }
 
@@ -50,6 +48,8 @@ nav{
 article{
   background-color: #82c3a6;
   width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   position:relative;
   right: 0px;
   top:0px;
@@ -59,26 +59,39 @@ article{
   display:block;
   margin-left:auto;
   margin-right: auto;
-  width:90%;
+  width: 80%;
 }
 
 section{
+  width: 100%;
+  height:auto;
   background-color: #d5c75f;
-  border-width: 1px;
-  width:100%;
   display:flex;
-  flex-direction: row wrap;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
-#paisajesprincipal{order:1;}
+figcaption{
+  text-align: center;
+  text-decoration: underline;
+}
 
-#paisajesprincipal:hover{
+#paisaje{
+  display:flex;
+  order:1;
+}
+
+#paisaje:hover{
   transform: rotate(10deg);
   box-shadow: 2px 2px 2px #82c3a6;
 }
-#retratosprincipal{order:2;}
 
-#retratosprincipal:hover{
+#retrato{
+  display:flex;
+  order:2;
+}
+
+#retrato:hover{
   transform:translate(20px, -5px);
   box-shadow: 2px 2px 2px #82c3a6;
 }
