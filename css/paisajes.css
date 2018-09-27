@@ -1,0 +1,201 @@
+#cuerpo{
+  max-width:900px;
+  margin:auto;
+
+}
+body{
+  background-color: #02010a;
+  font-family: "Dancing Script";
+}
+
+.images{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+#cabecera{
+  background-color:#5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  height:125px;
+  position:relative;
+  top:0px;
+  right: 0px;
+}
+
+#titulo{
+  text-shadow: 2px 2px 2px #02010a;
+  color:#ffffff;
+  width: 70%;
+  height:100%;
+  position:absolute;
+  top:10%;
+  left:2%;
+}
+
+#menu{
+  width: 20%;
+  height:100%;
+  font-size:18px;
+  margin-left: 80%;
+  position:absolute;
+  top:35%;
+  right:0%;
+}
+
+.menulink{
+  color:#ffffff;
+}
+.menulink:nth-child(2){
+  text-decoration:none;
+}
+
+#galeria{
+  width:900px;
+  height:600px;
+  background-color: #d5c75f;
+  display:flex;
+  flex-flow: row wrap;
+  justify: space-between;
+}
+
+.image{
+  width:90%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-top:15%;
+  padding-bottom:15%;
+}
+
+#foto1{
+  width:33%;
+  height: 49%;
+  position: relative;
+  left:0%;
+  top:0%;
+}
+
+#ft1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+#foto2{
+  width:33%;
+  height: 49%;
+  position: relative;
+  left:0%;
+  top:0%;
+}
+
+#ft2{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+
+#foto3{
+  width:32.5%;
+  height: 49%;
+  position: relative;
+  left:0%;
+  top:0%;
+}
+
+#ft3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+
+
+#foto4{
+  width:33%;
+  height: 49%;
+  position: relative;
+  left:0%;
+  top:0%;
+}
+
+#ft4{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#foto5{
+  width:32.5%;
+  height: 49%;
+  position: relative;
+  left:0%;
+  top:0%;
+}
+
+#foto6{
+  width:33%;
+  height: 49%;
+  position: relative;
+  left:0%;
+  top:0%;
+}
+
+#ft6{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+footer{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  width:100%;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+footer #contacto{order:1;}
+footer #terminos{order:2;}
+footer #redes{order:3;}
+footer #derechos{order:4;}
+
+@media (max-width:900px){
+  #cuerpo{
+    width:100%;
+    display:flex;
+    flex-flow: column wrap;
+  }
+  div #cabecera{order:1;}
+      #titulo{
+        width:100%;
+        text-align: center;
+        position:absolute;
+        top:5%;
+        left:0%;
+      }
+      #cabecera #menu{
+        width:100%;
+        text-align: center;
+        position:absolute;
+        top:70%;
+      }
+  div #galeria{order:2}
+  #galeria{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;}
+  #galeria #foto1{width:90%;order:1;padding-left: 5%;}
+  #galeria #foto2{width:90%;order:2;padding-left: 5%;}
+  #galeria #foto3{width:90%;order:3;padding-left: 5%;}
+  #galeria #foto4{width:90%;order:4;padding-left: 5%;}
+  #galeria #foto5{width:90%;order:5;padding-left: 5%;}
+  #galeria #foto6{width:90%;order:6;padding-left: 5%;}
+  div footer{order:3}
+  footer{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+  }
+  footer #contacto{order:1;padding-left: 5%;}
+  footer #terminos{order:2;padding-left: 5%;}
+  footer #redes{order:3;padding-left: 5%;}
+  footer #derechos{order:4;padding-left: 5%;}
+}
