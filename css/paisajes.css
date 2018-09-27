@@ -60,10 +60,11 @@ body{
 
 .image{
   width:90%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-top:15%;
-  padding-bottom:15%;
+  box-shadow: 2px 2px #02010a;
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:15%;
+  margin-bottom:15%;
 }
 
 #foto1{
@@ -188,6 +189,12 @@ footer #derechos{order:4;}
   #galeria #foto4{width:90%;order:4;padding-left: 5%;}
   #galeria #foto5{width:90%;order:5;padding-left: 5%;}
   #galeria #foto6{width:90%;order:6;padding-left: 5%;}
+  .image{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:5%;
+    margin-bottom:5%;}
   div footer{order:3}
   footer{
     display:flex;
